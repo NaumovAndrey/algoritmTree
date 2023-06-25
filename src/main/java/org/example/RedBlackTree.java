@@ -75,4 +75,18 @@ public class RedBlackTree<T extends Comparable<T>> {
         node.left.isRed = false;
         node.right.isRed = false;
     }
+
+    // ouput
+    public void inorderTraversal() {
+        inorderTraversal(root);
+    }
+
+    private void inorderTraversal(Node<T> node) {
+        if (node == null) {
+            return;
+        }
+        inorderTraversal(node.left);
+        System.out.println(node.data);
+        inorderTraversal(node.right);
+    }
 }

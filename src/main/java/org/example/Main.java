@@ -22,9 +22,20 @@ public class Main {
 
 
         // ---------- lesson4 (Tre) ----------
-        Tree tree = new Tree();
-        for (int i = 1; i < 5; i++) {
-            tree.insert(i);
-        }
+//        Tree tree = new Tree();
+//        for (int i = 1; i < 5; i++) {
+//            tree.insert(i);
+//        }
+
+        // ---------- homework 4 ----------
+
+        RedBlackTree<Integer> tree = new RedBlackTree<>();
+        tree.add(50);
+        tree.add(76);
+        tree.add(43);
+        tree.add(13);
+        tree.add(8);
+
+        tree.inorderTraversal();
     }
 }
